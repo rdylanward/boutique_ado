@@ -75,13 +75,16 @@ body {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
+
   .container {
     max-width: 80%;
   }
+
 }
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
+
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -93,4 +96,17 @@ body {
     .header-container {
         padding-top: 16.4rem;
     }
+
+}
+
+/* fixed top navbar only on medium and up */
+@media (max-width: 991px) {
+
+  .header-container {
+      padding-top: 11.6rem;
+  }
+
+  body {
+      height: calc(100vh - 11.6rem);
+  }
 }
